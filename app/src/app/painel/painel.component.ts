@@ -33,9 +33,7 @@ export class PainelComponent implements OnInit{
     if(this.resposta == this.rodadaFrase.frasePtBr){
       this.rodada++;
       this.progresso = this.progresso + (100/ this.frases.length);
-
       if(this.rodada === 4){
-        alert('Parabéns! Você concluiu as traduções com sucesso!');
         this.encerrarJogo.emit('vitoria');
       }
       this.atualizaRodada();
@@ -43,7 +41,6 @@ export class PainelComponent implements OnInit{
       alert('A tradução está incorreta');
       this.tentativas--;
       if(this.tentativas === -1){
-        alert('Você perdeu todas as tentivas');
         this.encerrarJogo.emit('derrota');
       }
     }
