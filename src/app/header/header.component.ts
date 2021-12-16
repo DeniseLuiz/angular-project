@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-topo',
-  templateUrl: './topo.component.html',
-  styleUrls: ['./topo.component.css']
+  selector: 'app-header',
+  templateUrl: './header.component.html',
+  styleUrls: ['./header.component.css']
 })
-export class TopoComponent {
+export class HeaderComponent {
 
   constructor() { }
 
