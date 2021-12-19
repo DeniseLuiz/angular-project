@@ -10,4 +10,4 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-#This project is published on the AWS cloud service S3. [Access](http://deniseluiz-pub.s3-website.us-east-2.amazonaws.com/) the application.
+## This project is published on the AWS cloud service S3. [Access](http://deniseluiz-pub.s3-website.us-east-2.amazonaws.com/) the application.
