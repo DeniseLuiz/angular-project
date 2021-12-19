@@ -16,7 +16,7 @@ export class PainelComponent implements OnInit{
   public rodadaFrase: Frase = {fraseEnglish: '', frasePtBr: ''};
   public progresso: number = 0;
   public tentativas: number = 3;
-  @Output() public encerrarJogo: EventEmitter<string> = new EventEmitter() //LEMVBRAR DO IGUAL
+  @Output() public encerrarJogo: EventEmitter<string> = new EventEmitter() //LEMBRAR DO IGUAL
 
   constructor() {
     this.atualizaRodada();
@@ -30,7 +30,7 @@ export class PainelComponent implements OnInit{
   }
 
   public verificarResposta(){
-    if(this.resposta == this.rodadaFrase.frasePtBr){
+    if(this.resposta.toLocaleLowerCase() == this.rodadaFrase.frasePtBr){
       this.rodada++;
       this.progresso = this.progresso + (100/ this.frases.length);
       if(this.rodada === 4){
